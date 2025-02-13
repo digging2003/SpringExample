@@ -1,6 +1,7 @@
 package com.digging.spring.ex.mybatis.repository;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import com.digging.spring.ex.mybatis.domain.Review;
 
@@ -8,6 +9,6 @@ import com.digging.spring.ex.mybatis.domain.Review;
 public interface ReviewRepository {
 
 	// id가 5인 행 조회
-	public Review selectReview();
+	public Review selectReview(@Param("id") int id);
 	
 }
