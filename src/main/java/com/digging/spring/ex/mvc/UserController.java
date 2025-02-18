@@ -18,6 +18,7 @@ public class UserController {
 
 	@Autowired
 	private UserService userService;
+	
 	// 사용자 정보를 전달 받고 저장하는 기능
 	@ResponseBody
 //	@RequestMapping(path="/mvc/user/create", method=RequestMethod.POST)
