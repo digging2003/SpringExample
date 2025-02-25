@@ -33,4 +33,9 @@ public class AjaxController {
 		return personMap;
 	}
 	
+	@GetMapping("/ajax/ex01")
+	public String ex01() {
+		return "ajax/ex01";
+	}
+	
 }
